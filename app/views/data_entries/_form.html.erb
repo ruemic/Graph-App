@@ -1,0 +1,22 @@
+<%= form_for(@data_entry) do |f| %>
+  <% if @data_entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@data_entry.errors.count, "error") %> prohibited this data_entry from being saved:</h2>
+
+      <ul>
+      <% @data_entry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.number_field :weight %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
