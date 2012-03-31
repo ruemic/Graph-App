@@ -1,3 +1,5 @@
 Graph::Application.routes.draw do
-  root :to => "home#index"
+  resources :points
+
+  root :to => "points#index"
 end

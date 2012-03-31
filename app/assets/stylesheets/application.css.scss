@@ -12,6 +12,13 @@
  *= require_tree .
 */
 
+#point_chart{
+  width:560px;
+  height:300px; 
+  border:1px solid black;
+  margin: 10px auto;
+}
+
 .content {
   background-color: #eee;
   padding: 20px;
